@@ -8,4 +8,4 @@
 #SBATCH --output=flcurve-act_len-%A_%a.log
 #SBATCH --error=flcurve-act_len-%A_%a.err
 #SBATCH --array=1-25
-./flexodeal-0.2.3/flexodeal -PARAMETERS=flexodeal-0.2.3/parameters.prm -ACTIVATION=control_points_activation_act_len.dat -BDY_STRAIN=strains_act_len/control_points_strain_${SLURM_ARRAY_TASK_ID}.dat -OUTPUT_DIR=strain_act_len_${SLURM_ARRAY_TASK_ID}
+./flexodeal -PARAMETERS=parameters.prm -ACTIVATION=control_points_activation_act_len.dat -BDY_STRAIN=strains_act_len/control_points_strain_${SLURM_ARRAY_TASK_ID}.dat -OUTPUT_DIR=../strain_act_len_${SLURM_ARRAY_TASK_ID}
