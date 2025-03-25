@@ -4,7 +4,7 @@
 #SBATCH --ntasks-per-node=1
 #SBATCH --cpus-per-task=24
 #SBATCH --mem=16G
-#SBATCH --time=01:00:00
+#SBATCH --time=03:00:00
 #SBATCH --output=flcurve-act_len-%A_%a.log
 #SBATCH --error=flcurve-act_len-%A_%a.err
 #SBATCH --array=1-25
